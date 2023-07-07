@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario de Registro</title>
+    <style>
+        /* input{
+            display: block; pone los input uno debajo del otro
+        }*/
+
+        header{
+            border-color: white;
+            border-width: 2px;
+            border-style: solid;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            color:white;
+            font-size: 20px;
+            padding: 5px; 
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            background-color:rgb(10, 71, 109);
+        }
+        form{
+            background-color: white;
+            border-color: black;
+            border-style: solid;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            width: 40%;
+            margin: auto;
+            padding: 2em;
+            margin-top: 1em;
+            border-radius: 10px;
+            box-shadow: 10px 10px 5px 0px rgb(10, 71, 109);
+        }
+
+        input{
+            width: 100%;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenidos Digitalers!</h1>
+        <h2>Registro para crear un usuario nuevo</h2>
+    </header>
+    <main>
+        <form method="get">
+            <div>
+                <label for="txtNombre">Nombre:</label>
+                <div><input type="text" id="txtNombre" name="Nombre" required minlength="3" maxlength="10"/></div>
+            </div>
+            <div>
+                <label for="txtApellido">Apellido:</label>
+                <div><input type="text" id="txtApellido" name="apellido" required/></div>
+            </div>
+            <div>
+                <label for="txtDocumento">Documento:</label>
+                <div><input type="number" min="10000000" max="60000000000" id="txtDocumento" name="documento" required/></div>
+            </div>
+            <div>
+                <label for="txtfechadenacimiento">Fecha de Nacimiento:</label>
+                <div><input type="date" id="txtfechadenacimiento" name="fechadenacimiento" required/></div>
+            </div>
+            <div>
+                <label for="txtPassword">Password</label>
+                <div><input type="password" id="txtPassword" name="password" required></div>
+            </div>
+            <div>
+                <label for="txtVerificacionPassword">Verificar Password:</label>
+                <div><input type="password" id="txtVerificacionPassword" name="verificapassword" required/></div>
+            </div>
+            <div>
+                <br>
+            </div>
+            <div>
+                <label>Acepto Terminos y Condiciones</label>
+                <div><input type="checkbox" id="chkterminos y condiciones" name="aceptoterminos" /></div>
+            </div>
+       
+            <button>Enviar Formulario</button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
